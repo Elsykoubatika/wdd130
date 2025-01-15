@@ -1,0 +1,36 @@
+main {
+    max-width: 840px;
+    text-align: left;
+    color: #20103f;
+
+}
+
+aside {
+    width: 30rem;
+    margin: 2%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 0rem;
+    background-color: #b0d0c286;
+    color: #0e061e;
+    text-align: center;
+}
+
+aside img {
+    width: 400px;
+    height: auto;
+}
+
+main img {
+    width: 350px;
+    height: auto;
+}
+
+p {
+    padding: 0;
+}
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #427759;
+    text-align: center;
+}
