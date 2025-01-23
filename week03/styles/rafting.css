@@ -1,0 +1,98 @@
+/*Les variables CSS globales sont utilisées en appelant le nom de la variable avec la var()fonction
+Les sites Web complexes contiennent de très grandes quantités de CSS, ce qui entraîne souvent de 
+nombreuses valeurs CSS répétées. Par exemple, il est courant de voir la même couleur utilisée à des centaines d'endroits différents dans les feuilles de style. La modification d'une couleur qui a été dupliquée à de nombreux endroits*/
+:root {
+	--black: #000000ff;
+	--lavender-web: #ced5e3ff;
+	--white: #fefefeff;
+	--penn-blue: #202561ff;
+	--polynesian-blue: rgb(5, 79, 158);
+}
+/*Exemple de l'utilisation de variables CSS globales*/
+body {
+	background-color: var(--lavender-web);
+}
+
+a {
+	color: var(--polynesian-blue);
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+
+.logo-box img {
+	width: 180px;
+}
+article {
+	position: relative; /* cette fonction modifie la position d'un élément par rapport à son conteneur */
+	left: 55px;
+	bottom: 250px;
+	background: var(--polynesian-blue);
+	box-shadow: 0 0 60px #111;
+	opacity: 0.8;
+	padding: 0.2rem;
+	width: 90%;
+	max-width: 900px;
+	border-radius: 7px;
+}
+
+div h1 {
+	position: relative; /* cette fonction modifie la position d'un élément par rapport à son conteneur */
+	bottom: 350px;
+	opacity: 0.5;
+	width: 85.4rem;;
+	color: var(--white);
+	background: var(--black);
+	text-align: center;
+}
+
+article p {
+	color: var(--lavender-web);
+	margin-right: 9rem;
+	margin-left: 2rem;
+	font-size: 1.2rem;
+}
+article img {
+	width: 100px;
+	position: absolute;
+	top: 10px;
+	right: 12px;
+}
+
+.history {
+	position: relative;
+	bottom: 14px;
+	max-width: 900px;
+	color: var(--black);
+	font-size: 1.8rem;
+	transition: transform 0.2s;
+} 
+
+h2 {
+	color: var(--polynesian-blue);
+	font-size: 3rem;
+}
+
+.adventure img{
+	position: relative;
+	bottom: 10px;
+	color: var(--black);
+	width: 30%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    gap: 10px;
+    padding: 10px;
+	
+}
+
+.adventure img:hover {
+    transform: scale(1.1);
+	transition: transform 0.2s;
+}
+
+footer {
+	/*position: fixed;*/
+	display: flex;
+    flex-wrap: wrap;	
+	width: 20px;
+	
+}

@@ -1,0 +1,21 @@
+<!-- Coolors Palette Widget -->
+      <script src="https://coolors.co/palette-widget/widget.js"></script>
+      <script data-id="02197678388003379">new CoolorsPaletteWidget("02197678388003379", ["01161e","124559","598392","aec3b0","eff6e0","ead2ac","8ddca4","b9e28c"]); </script>
+
+      https://coolors.co/01161e-124559-598392-aec3b0-eff6e0-ead2ac-8ddca4-b9e28c
+
+
+
+<!-- Coolors Palette Widget -->
+      <script src="https://coolors.co/palette-widget/widget.js"></script>
+      <script data-id="07385473443661219">new CoolorsPaletteWidget("07385473443661219", ["0b1f42","103ecd","000012","081935","031081","2663ee","164df9","041229"]); </script>
+
+https://coolors.co/0b1f42-103ecd-000012-081935-031081-2663ee-164df9-041229
+
+
+
+<!-- Coolors Palette Widget -->
+      <script src="https://coolors.co/palette-widget/widget.js"></script>
+      <script data-id="0875973220143418">new CoolorsPaletteWidget("0875973220143418", ["3333ff","28587b","a9a6c9","6587a4","9ab493"]); </script>
+
+      https://coolors.co/3333ff-28587b-a9a6c9-6587a4-9ab493
