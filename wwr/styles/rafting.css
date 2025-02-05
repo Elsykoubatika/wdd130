@@ -9,93 +9,166 @@ nombreuses valeurs CSS répétées. Par exemple, il est courant de voir la même
 	--polynesian-blue: rgb(5, 79, 158);
 	--blue-ncs: #0087bd;
 }
-/*Exemple de l'utilisation de variables CSS globales*/
-body {
-	margin: 20px;
-	background-color: var(--lavender-web);
-}
 
 a {
 	margin: 8px;
 	color: var(--polynesian-blue);
 	font-size: 1.2rem;
 	text-decoration: none;
+	border-radius: 4px;
 }
 
-.logo-box img {
-	width: 180px;
-}
 article {
 	position: relative; /* cette fonction modifie la position d'un élément par rapport à son conteneur */
-	left: 55px;
-	bottom: 250px;
+	bottom: 20rem;
 	background: var(--polynesian-blue);
-	box-shadow: 0 0 60px #111;
+	box-shadow: 0 1px 60px #111;
 	opacity: 0.8;
-	padding: 0.2rem;
-	width: 90%;
-	max-width: 900px;
+	width: 250rem;
 	border-radius: 7px;
+	padding: 1rem;
 }
 
 div h1 {
 	position: relative; /* cette fonction modifie la position d'un élément par rapport à son conteneur */
-	bottom: 350px;
-	opacity: 0.5;
-	width: 85.4rem;;
+	bottom: 40rem;
+	opacity: 0.6;
+	width: 150.2rem;;
 	color: var(--white);
 	background: var(--black);
 	text-align: center;
+	font-family: Arial, sans-serif;
+}
+
+div img {
+	width: 145rem;
+	display: flex;
+}
+
+.box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 article p {
 	color: var(--lavender-web);
-	margin-right: 9rem;
-	margin-left: 2rem;
-	font-size: 1.2rem;
+	width: 100rem;
+	font-size: 1.8rem;
+	font-family: Arial, sans-serif;
+	text-align: justify;
 }
 article img {
-	width: 100px;
+	width: 15rem;
 	position: absolute;
-	top: 10px;
-	right: 12px;
+	top: 1rem;
+	right: 1.4rem;
+	display: flex;
+	border-radius: 6px;
 }
 
 .history {
 	position: relative;
-	bottom: 150px;
-	max-width: 900px;
+	bottom: 100px;
 	color: var(--black);
 	font-size: 1.8rem;
-	transition: transform 0.2s;
-	margin: 2px;
+	display: flex;
+    flex-wrap: wrap; /* Permet d'aller à la ligne si l'écran est trop petit */
+    gap: 20px; /* Ajoute un espacement entre les éléments */
+    align-items: start; /* Aligne les paragraphes en haut */
 } 
+
+.history img {
+	width: 32rem;
+	position: absolute;
+	border-radius: 6px;
+	right: 45.7rem;
+	top: 1rem;
+	display: flex;
+}
+
+.history-text {
+	display: flex;
+    gap: 30rem;
+    flex: 1;	
+}
+
+.history p {
+	flex: 1; /* Permet aux paragraphes de prendre un espace égal */
+    text-align: justify;
+	font-size: 1.4rem;
+	padding: 3rem;
+	font-family: Arial, sans-serif;
+}
 
 h2 {
 	color: var(--polynesian-blue);
 	font-size: 3rem;
-	position: relative;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 58rem;
+	bottom: 19rem;
+	
+
 }
 
-.adventure img{
-	position: relative;
-	bottom: 150px;
-	color: var(--blue-ncs);
-	width: 30%;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px var(--blue-ncs);
-    padding: 10px;
-	margin: 2px;
+.adventure {
+    display: grid;
+    grid-auto-flow: column; 
+    grid-auto-columns: minmax(160px, 1fr);
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.adventure .item {
+	display: flex;
+    flex-direction: column; 
+    align-items: center; 
+	padding: 10px;
+}
+
+.adventure img {
+    width: 25rem;
+	height: 15rem;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+		margin: 10px; 
 }
 
 .adventure h1 {
-	margin: 20px;
+    font-size: 15px;
+    margin-top: 16rem;
+	right: 8rem;
 	position: relative;
-	bottom: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 }
+
 .adventure h2 {
-	position: relative;
-	bottom: 150px;
+	top: 80rem;
+	position: absolute;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	text-align: center;
+	left: 48rem;
+}
+
+header {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #0087bd;
+	padding: 1px;
+}
+
+header img {
+	width: 90px;
 }
 
 .adventure img:hover {
@@ -103,7 +176,21 @@ h2 {
 	transition: transform 0.2s;
 }
 
-footer img {
+a:hover {
+	background: var(--polynesian-blue);
+	color: var(--white);
+	transform: scale(1.1);
+	transition: transform 0.2s;
+}
+
+footer {
 	/*position: fixed;*/
-	width: 23px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #0087bd;
+}
+
+footer img {
+	width: 30px;
 }
