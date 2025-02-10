@@ -3,41 +3,74 @@ Les sites Web complexes contiennent de très grandes quantités de CSS, ce qui e
 nombreuses valeurs CSS répétées. Par exemple, il est courant de voir la même couleur utilisée à des centaines d'endroits différents dans les feuilles de style. La modification d'une couleur qui a été dupliquée à de nombreux endroits*/
 :root {
 	--black: #000000ff;
-	--lavender-web: #ced5e3ff;
-	--white: #fefefeff;
-	--penn-blue: #202561ff;
-	--polynesian-blue: rgb(5, 79, 158);
-	--blue-ncs: #0087bd;
+	--white: #FFFFFFFF;
+	--polynesian-blue: #0056b3;
+	--blue: #ced5e3;
 }
 
-a {
-	margin: 8px;
-	color: var(--polynesian-blue);
-	font-size: 1.2rem;
-	text-decoration: none;
+body {
+	font-family: Arial, sans-serif;
+	background-color: var(--blue);
+}
+header {
+	display: grid;
+	justify-content: space-between;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	background-color: var(--polynesian-blue);
+}
+
+.logo-box img {
+	width: 90px;
+}
+
+header nav  {
+    display: flex;
+    justify-content: flex-end;
 	border-radius: 4px;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--penn-blue);
+}
+
+nav a {
+    color: var(--white);
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: var(--polynesian-blue);
+    color: var(--white);
+    transform: scale(1.1);
+}
+
 article {
-	position: relative; /* cette fonction modifie la position d'un élément par rapport à son conteneur */
+	position: relative;
 	bottom: 20rem;
 	background: var(--polynesian-blue);
-	box-shadow: 0 1px 60px #111;
-	opacity: 0.8;
+	box-shadow: 0 3px 60px #111;
+	opacity: 0.7;
 	width: 250rem;
 	border-radius: 7px;
 	padding: 1rem;
 }
 
 div h1 {
-	position: relative; /* cette fonction modifie la position d'un élément par rapport à son conteneur */
-	bottom: 40rem;
+	position: relative;
 	opacity: 0.6;
 	width: 150.2rem;;
 	color: var(--white);
 	background: var(--black);
 	text-align: center;
 	font-family: Arial, sans-serif;
+	bottom: 40rem;
 }
 
 div img {
@@ -45,27 +78,27 @@ div img {
 	display: flex;
 }
 
-.box {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-}
-
 article p {
-	color: var(--lavender-web);
+	color: var(--black);
 	width: 100rem;
 	font-size: 1.8rem;
 	font-family: Arial, sans-serif;
 	text-align: justify;
 }
+.box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 1px;
+}
+
 article img {
 	width: 15rem;
 	position: absolute;
-	top: 1rem;
 	right: 1.4rem;
 	display: flex;
-	border-radius: 6px;
+	border-radius: 4px;
 }
 
 .history {
@@ -74,17 +107,15 @@ article img {
 	color: var(--black);
 	font-size: 1.8rem;
 	display: flex;
-    flex-wrap: wrap; /* Permet d'aller à la ligne si l'écran est trop petit */
-    gap: 20px; /* Ajoute un espacement entre les éléments */
-    align-items: start; /* Aligne les paragraphes en haut */
-} 
+    flex-wrap: wrap;  
+    align-items: start;
+}
 
 .history img {
-	width: 32rem;
+	width: 30rem;
 	position: absolute;
 	border-radius: 6px;
-	right: 45.7rem;
-	top: 1rem;
+	right: 46.7rem;
 	display: flex;
 }
 
@@ -95,7 +126,7 @@ article img {
 }
 
 .history p {
-	flex: 1; /* Permet aux paragraphes de prendre un espace égal */
+	flex: 1; 
     text-align: justify;
 	font-size: 1.4rem;
 	padding: 3rem;
@@ -109,10 +140,8 @@ h2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	left: 58rem;
+	left: 49rem;
 	bottom: 19rem;
-	
-
 }
 
 .adventure {
@@ -135,12 +164,12 @@ h2 {
 	height: 15rem;
     border-radius: 6px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-		margin: 10px; 
+	margin: 10px; 
 }
 
-.adventure h1 {
+.adventure h3 {
     font-size: 15px;
-    margin-top: 16rem;
+    margin-top: 17rem;
 	right: 8rem;
 	position: relative;
 	display: flex;
@@ -150,7 +179,7 @@ h2 {
 }
 
 .adventure h2 {
-	top: 80rem;
+	top: 82rem;
 	position: absolute;
 	display: flex;
 	flex-direction: column-reverse;
@@ -159,17 +188,6 @@ h2 {
 	left: 48rem;
 }
 
-header {
-    display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #0087bd;
-	padding: 1px;
-}
-
-header img {
-	width: 90px;
-}
 
 .adventure img:hover {
     transform: scale(1.1);
@@ -189,6 +207,7 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	background-color: #0087bd;
+	padding: 1px 20px;
 }
 
 footer img {
