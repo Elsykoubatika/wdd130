@@ -5,6 +5,7 @@ nombreuses valeurs CSS répétées. Par exemple, il est courant de voir la même
 	--black: #000000ff;
 	--white: #FFFFFFFF;
 	--polynesian-blue: #0056b3;
+	--penn-blue: #0087bd;
 	--blue: #ced5e3;
 }
 
@@ -12,43 +13,43 @@ body {
 	font-family: Arial, sans-serif;
 	background-color: var(--blue);
 }
+
 header {
 	display: grid;
 	justify-content: space-between;
 	grid-template-columns: auto 1fr;
 	align-items: center;
-	background-color: var(--polynesian-blue);
+	background-color: var(--penn-blue);
 }
 
 .logo-box img {
 	width: 90px;
 }
 
-header nav  {
-    display: flex;
-    justify-content: flex-end;
+header nav {
+	display: flex;
+	justify-content: flex-end;
 	border-radius: 4px;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    background-color: var(--penn-blue);
+	display: flex;
+	justify-content: center;
 }
 
 nav a {
-    color: var(--white);
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    transition: 0.3s;
+	color: var(--white);
+	font-size: 1.2rem;
+	text-decoration: none;
+	padding: 10px 15px;
+	border-radius: 4px;
+	transition: 0.3s;
 }
 
 nav a:hover {
-    background: var(--polynesian-blue);
-    color: var(--white);
-    transform: scale(1.1);
+	background: var(--polynesian-blue);
+	color: var(--white);
+	transform: scale(1.1);
 }
 
 article {
@@ -65,7 +66,8 @@ article {
 div h1 {
 	position: relative;
 	opacity: 0.6;
-	width: 150.2rem;;
+	width: 150.2rem;
+	;
 	color: var(--white);
 	background: var(--black);
 	text-align: center;
@@ -85,6 +87,7 @@ article p {
 	font-family: Arial, sans-serif;
 	text-align: justify;
 }
+
 .box {
 	display: flex;
 	flex-wrap: wrap;
@@ -107,8 +110,8 @@ article img {
 	color: var(--black);
 	font-size: 1.8rem;
 	display: flex;
-    flex-wrap: wrap;  
-    align-items: start;
+	flex-wrap: wrap;
+	align-items: start;
 }
 
 .history img {
@@ -121,13 +124,13 @@ article img {
 
 .history-text {
 	display: flex;
-    gap: 30rem;
-    flex: 1;	
+	gap: 30rem;
+	flex: 1;
 }
 
 .history p {
-	flex: 1; 
-    text-align: justify;
+	flex: 1;
+	text-align: justify;
 	font-size: 1.4rem;
 	padding: 3rem;
 	font-family: Arial, sans-serif;
@@ -145,31 +148,31 @@ h2 {
 }
 
 .adventure {
-    display: grid;
-    grid-auto-flow: column; 
-    grid-auto-columns: minmax(160px, 1fr);
-    overflow-x: auto;
-    white-space: nowrap;
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: minmax(160px, 1fr);
+	overflow-x: auto;
+	white-space: nowrap;
 }
 
 .adventure .item {
 	display: flex;
-    flex-direction: column; 
-    align-items: center; 
+	flex-direction: column;
+	align-items: center;
 	padding: 10px;
 }
 
 .adventure img {
-    width: 25rem;
+	width: 25rem;
 	height: 15rem;
-    border-radius: 6px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-	margin: 10px; 
+	border-radius: 6px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	margin: 10px;
 }
 
 .adventure h3 {
-    font-size: 15px;
-    margin-top: 17rem;
+	font-size: 15px;
+	margin-top: 17rem;
 	right: 8rem;
 	position: relative;
 	display: flex;
@@ -188,15 +191,133 @@ h2 {
 	left: 48rem;
 }
 
-
 .adventure img:hover {
-    transform: scale(1.1);
+	transform: scale(1.1);
 	transition: transform 0.2s;
 }
 
+.office-container {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: minmax(160px, 1fr);
+}
+
+.Globals-Offices h2 {
+	bottom: 9rem;
+}
+
+.Globals-Offices p {
+	top: 14rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	right: 15rem;
+	font-size: 14px;
+}
+
+.Globals-Offices img {
+	width: 30rem;
+	height: 20rem;
+	border-radius: 6px;
+}
+
+.send {
+	margin: 10rem 45rem 25px;
+	background-color: #0087bd;
+	border-radius: 15px;
+	width: 35rem;
+}
+
+.send h2 {
+	top: 100px
+}
+
+label {
+	margin: 10px 0 0;
+	font-size: 14px;
+}
+
+.button {
+	display: grid;
+	grid-auto-flow: row;
+	grid-auto-columns: minmax(160px, 1fr);
+	overflow-x: auto;
+	white-space: nowrap;
+	margin: 15px;
+}
+
+button {
+	width: 200px;
+	height: 40px;
+	margin: 2rem 6rem 3rem;
+	background-color: var(--polynesian-blue);
+	font-size: 20px;
+	border-radius: 10px;
+}
+
+form {
+	width: 30rem;
+	display: grid;
+	grid-auto-flow: row;
+	grid-auto-columns: minmax(16px, 1fr);
+	overflow-x: auto;
+	white-space: nowrap;
+	font-size: 14px;
+	margin: 0 25px 0;
+}
+
+
+fieldset {
+    border: 0; /* Supprime la bordure */
+
+}
+
+.map {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: minmax(160px, 1fr);
+	overflow-x: auto;
+	white-space: nowrap;
+	margin: 90px;
+}
+
+.map iframe {
+	width: 50rem;
+	height: 30rem;
+	border-radius: 6px;
+}
+
+.contact-info {
+	top: 20rem;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.contact-info h2 {
+	left: 1px;
+	bottom: 28rem;
+}
+
+.contact-info p {
+	font-size: 25px;
+	margin: 30px 50px 20px;
+}
+
+.send h3 {
+	font-size: 3rem;
+	text-align: center;
+	color: var(--white);
+}
 a:hover {
 	background: var(--polynesian-blue);
-	color: var(--white);
+	transform: scale(1.1);
+	transition: transform 0.2s;
+}
+
+button:hover {
 	transform: scale(1.1);
 	transition: transform 0.2s;
 }
@@ -206,7 +327,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #0087bd;
+	background-color: var(--penn-blue);
 	padding: 1px 20px;
 }
 
