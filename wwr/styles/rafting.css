@@ -67,7 +67,6 @@ div h1 {
 	position: relative;
 	opacity: 0.6;
 	width: 150.2rem;
-	;
 	color: var(--white);
 	background: var(--black);
 	text-align: center;
@@ -249,11 +248,11 @@ label {
 
 button {
 	width: 200px;
-	height: 40px;
+	height: 70px;
 	margin: 2rem 6rem 3rem;
 	background-color: var(--polynesian-blue);
 	font-size: 20px;
-	border-radius: 10px;
+	border-radius: 8px;
 }
 
 form {
@@ -267,10 +266,8 @@ form {
 	margin: 0 25px 0;
 }
 
-
 fieldset {
     border: 0; /* Supprime la bordure */
-
 }
 
 .map {
@@ -306,6 +303,126 @@ fieldset {
 	margin: 30px 50px 20px;
 }
 
+.company {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 10px 1px;
+}
+.company h3 {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	font-size: 8rem;
+	color: var(--blue);
+	box-shadow: 1px 1px 38px var(--penn-blue);
+}
+
+
+.company form {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	bottom: 20px;
+}
+
+.company h3:hover {
+	transform: scale(1.1);
+	transition: transform 0.2s;
+}
+
+.rafting {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: minmax(160px, 1fr);
+}
+
+.rafting img {
+	width: 38rem;
+	height: 26rem;
+	border-radius: 2px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	margin: 2rem 0 20rem;
+	background-color: var(--penn-blue);
+}
+
+.rafting img:hover {
+	transform: scale(1.1);
+	transition: transform 0.2s;
+}
+
+.rafting h3 {
+	position: relative;
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: minmax(160px, 1fr);
+	white-space: nowrap;
+	margin-top: 30rem;
+	right: 13.6rem;
+	background-color: var(--penn-blue);
+	width: 36rem;
+	height: 2rem;
+	padding: 1rem;
+	text-align: center;
+}
+
+.rafting p {
+	position: relative;
+	color: var(--black);
+	width: 37rem;
+	font-size: 1.4rem;
+	font-family: Arial, sans-serif;
+	text-align: justify;
+	top: 34rem;
+	right: 27rem;
+}
+
+.rafting h2 {
+	position: absolute;
+	font-size: 5rem;
+	top: 70rem;
+	left: 40rem;
+	align-items: center;
+	text-align: center;
+}
+
+.thrills article {
+	position: relative;
+	bottom: 20rem;
+	background: var(--penn-blue);
+	width: 50rem;
+	height: 30rem;
+	padding: 1rem;
+	left: 60rem;
+	bottom: 36rem;
+	opacity: 8;
+	font-size: 30px;
+}
+.thrills img {
+	width: 90rem;
+	height: 45rem;
+	margin-top: 10rem;
+	border-radius: 6px;
+}
+.thrills P {
+	color: var(--black);
+	width: 45rem;
+	font-size: 1.4rem;
+	font-family: Arial, sans-serif;
+	text-align: justify;
+	font-size: 25px;
+	padding: 0 20px;
+}
+
+.button-text {
+	position: absolute;
+	top: 168rem;
+	left: 85rem;
+}
 .send h3 {
 	font-size: 3rem;
 	text-align: center;
@@ -315,6 +432,15 @@ a:hover {
 	background: var(--polynesian-blue);
 	transform: scale(1.1);
 	transition: transform 0.2s;
+}
+
+.call-to-action {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10rem;
+	position: absolute;
+	top: 125rem;
 }
 
 button:hover {
@@ -333,4 +459,11 @@ footer {
 
 footer img {
 	width: 30px;
+}
+
+footer a {
+	font-size: 20px;
+	margin-top: 20px;
+	text-align: center;
+	justify-items: center;
 }
