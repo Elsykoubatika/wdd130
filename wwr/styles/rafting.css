@@ -10,3 +10,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+header {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: 14px;
+}
+
+header img {
+    width: 130px;
+}
+
+main {
+    max-width: 2000px;
+}
