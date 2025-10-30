@@ -47,6 +47,7 @@ a {
 }
 
 h1 {
+    font-family: var(--heading-font);
     position: absolute;
     top: 20px;
     width: 100%;
@@ -72,7 +73,7 @@ h1 {
     width: 125px;
 }
 
-article {
+.hero article {
     position: absolute;
     margin: 16px;
     padding: 8px;
@@ -94,12 +95,16 @@ h2 {
     padding: 8px;
     text-align: center;
     color: #fff;
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
 }
 
 P {
     font-size: 14px;
     font-family: var(--body-font);
+}
+
+.socialmedia {
+    text-decoration: none;
 }
 
 .adventure {
@@ -119,7 +124,7 @@ aside img {
 
 footer {
     width: 840px;
-    border-top: 2px solid;
+    border-top: 2px solid var(--secondary-color);
     margin: 20px auto;
 }
 
