@@ -1,5 +1,17 @@
 main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+header,
+footer {
     max-width: 840px;
+    margin: 0 auto;
 }
 
 main img {
@@ -16,28 +28,39 @@ aside img {
 }
 
 aside {
-    width: 20rem;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 20rem;
+
 }
 
 nav {
-    background-color: darkcyan;
-    padding: 10px;
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
 h1 {
-    color: darkcyan
+    color: darkcyan;
+    border-bottom: 1px solid #000;
 }
 
 img {
