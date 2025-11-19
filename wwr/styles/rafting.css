@@ -1,7 +1,7 @@
 :root {
     --primary-color: #055a05;
-    --secondary-color: #f4a261;
-    --accent1-color: #264653;
+    --secondary-color: #fff;
+    --accent1-color: #00000079;
     --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -59,7 +59,7 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .hero {
@@ -98,7 +98,7 @@ h2 {
     margin: 16px 0;
     padding: 8px;
     text-align: center;
-    color: #fff;
+    color: var(--secondary-color);
     background-color: var(--primary-color);
 }
 
@@ -131,8 +131,8 @@ figure {
 }
 
 figcaption {
-    background-color: #222222;
-    color: white;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: center;
@@ -142,7 +142,7 @@ aside img {
     width: 100%;
 }
 
-.socialmedia {
+.socialmedia a {
     text-decoration: none;
 }
 
@@ -151,7 +151,7 @@ footer {
     align-items: center;
     justify-content: space-around;
     width: 840px;
-    border-top: 2px solid var(--secondary-color);
+    border-top: 2px solid var(--accent2-color);
     margin: 20px auto;
 }
 
