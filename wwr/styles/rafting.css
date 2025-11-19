@@ -149,7 +149,7 @@ aside img {
 footer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 840px;
     border-top: 2px solid var(--secondary-color);
     margin: 20px auto;
