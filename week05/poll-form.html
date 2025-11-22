@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Path Activity</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+    <main>
+        <h1>
+            WDD 130 | HTML Form - User Poll
+        </h1>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input id="fullname" name="fullname" type="text" required />
+                </div>
+
+                <div class="form-item column2">
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="email" required />
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Questions</legend>
+
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite internet browser?</label>
+                    <select id="browser" name="browser">
+                        <option value="" selected disabled>Choose One ...</option>
+                        <option value="Chrome" selected>Chrome</option>
+                        <option value="Firefox">Firefox</option>
+                        <option value="Edge">Edge</option>
+                        <option value="Safari">Safari</option>
+                        <option value="Opera">Opera</option>
+                    </select>
+                </div>
+
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input id="pet" name="pet" type="checkbox" value="yes" />
+                </div>
+
+                <div class="form-item column2">
+                    <label for="feedback">List the places you have lived:</label>
+                    <textarea id="feedback" name="feedback" rows="4"
+                        placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali"></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit">Submit Poll</button>
+        </form>
+
+    </main>
+    <footer>
+        <p>©2025 ❖ Koubatika Elsy Fernandez, Brazzaville</p>
+    </footer>
+</body>
+
+</html>
