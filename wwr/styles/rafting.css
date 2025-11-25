@@ -61,6 +61,45 @@ h1 {
     color: var(--secondary-color);
 }
 
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(24px, 2vw, 48px);
+    align-items: start;
+    justify-items: center;
+}
+
+.tile {
+    text-align: center;
+}
+
+.tile-img {
+    width: 220px;
+    height: 200px;
+    object-fit: cover;
+    border: 7px solid var(--accent2-color);
+    border-radius: 6px;
+    box-shadow: var(--accent1-color);
+    margin-inline: auto;
+}
+
+.tile-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    fill: var(--muted);
+    display: block;
+}
+
+.label {
+    font-weight: 600;
+}
+
 .contact h1 {
     position: relative;
     background: none;
