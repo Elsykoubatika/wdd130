@@ -144,16 +144,13 @@ li {
     position: relative;
     right: 5rem;
     opacity: .8;
+    color: var(--secondary-color);
 }
 
 .doors h3 {
     font-size: 2rem;
     color: var(--secondary-color);
     padding: 8px;
-}
-
-.doors {
-    color: var(--secondary-color);
 }
 
 .contact h1 {
