@@ -43,5 +43,6 @@
   "fiveServer.port": 5501,
   "fiveServer.injectBody": false,
   "liveServer.settings.port": 5504,
-  "vscode-corda.isCordaProject": false
+  "vscode-corda.isCordaProject": false,
+  "window.zoomLevel": 0
 }
